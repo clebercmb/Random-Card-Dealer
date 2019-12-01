@@ -1,6 +1,6 @@
 var suites = ["\u2666", "\u2660", "\u2663", "\u2665"]
 var colorsCard = ["red", "black","black", "red"]
-var valuesCard = ["1", "2", "3", "4", "5", "6", "7", "8", "9","10", "K", "Q", "J", "A"]
+var valuesCard = ["2", "3", "4", "5", "6", "7", "8", "9","10", "K", "Q", "J", "A"]
 
 
 function initialize() {
@@ -40,7 +40,7 @@ function randomValuesCard() {
 
 }
 
-function randomColorCard() {
+function randomColorCard() {git 
     let i = Math.floor(Math.random()*colorCard.length)
     console.log(colorCard[i])
     return colorCard[i]
