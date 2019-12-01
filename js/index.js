@@ -1,13 +1,15 @@
 var suites = ["\u2666", "\u2660", "\u2663", "\u2665"]
+var colorsCard = ["red", "black","black", "red"]
 var valuesCard = ["1", "2", "3", "4", "5", "6", "7", "8", "9","10", "K", "Q", "J", "A"]
-var colorCard = ["black", "red"]
+
 
 function initialize() {
     console.log("initialize")
-    
-    let suite = randomSuites()
+    let suiteIndex = randomSuites()
+    let suite = suites[suiteIndex]
+    let colorCard = colorsCard[suiteIndex]
     let valueCard = randomValuesCard()
-    let colorCard = randomColorCard()
+
 
     console.log(colorCard)
 
@@ -24,9 +26,10 @@ function initialize() {
 
 
 function randomSuites() {
+    console.log("randomSuites")
     let i = Math.floor(Math.random()*suites.length)
-    console.log(suites[i])
-    return suites[i]
+    console.log(i)
+    return i
 }
 
 function randomValuesCard() {

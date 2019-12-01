@@ -13,7 +13,9 @@
     border: 1 solid black;
     margin-top: 10px;
     text-align: center;
-    position: relative;  
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .symbol {
